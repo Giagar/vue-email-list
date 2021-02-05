@@ -49,6 +49,12 @@ $(document).ready(function() {
         })
         
     }
+
+    // STYLE
+    $(".bonus h2").click(function() {
+        $(".bonus .content.container").toggleClass("flex");
+        $(".bonus h2").toggleClass("outline");
+    })
     
 })
 

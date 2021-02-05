@@ -11,39 +11,49 @@
 </head>
 <body>
     
+    <!-- EXERCISE    -->
     <div id="root">
         <header>
-            <h1>Practicing AJAX</h1>
+            <h1>Practicing with AJAX</h1>
         </header>
         
         <main>
-
             <h2>The Vue way</h2>
-            <h3>Using Self</h3>
-            <ul class="email-list vue">
-                <li v-for="email in emailsSelf">{{email}}</li>
-            </ul>
 
-            <h3>Using Arrow Functions</h3>
-            <ul class="email-list vue">
-                <li v-for="email in emailsArrow">{{email}}</li>
-            </ul>
+            <div class="content container">
+                <div class="vue self container ">
+                    <h3>Using Self</h3>
+                    <ul class="email-list vue">
+                        <li v-for="email in emailsSelf">{{email}}</li>
+                    </ul>
+                </div>
+    
+                <div class="arrow container vue">
+                    <h3>Using Arrow Functions</h3>
+                    <ul class="email-list vue">
+                        <li v-for="email in emailsArrow">{{email}}</li>
+                    </ul>
+                </div>
+            </div>
            
         </main>
     </div>
 
     <section class="bonus">
 
-        <h2>Bonus</h2>
+        <!-- BONUS -->
+        <h2><span>Bonus</span></h2>
+
+        <div class="content container">
+            <div class="jquery-container">
+                <h3>The jQuery way</h3>
+                <ul class="email-list jquery"></ul>
+            </div>
         
-        <div class="jquery-container">
-            <h3>The jQuery way</h3>
-            <ul class="email-list jquery"></ul>
-        </div>
-    
-        <div class="vanilla-container">
-            <h3>The Vanilla way</h3>
-            <ul class="email-list vanilla"></ul>
+            <div class="vanilla-container">
+                <h3>The Vanilla way</h3>
+                <ul class="email-list vanilla"></ul>
+            </div>
         </div>
 
     </section>
