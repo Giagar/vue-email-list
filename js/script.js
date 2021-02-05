@@ -52,7 +52,7 @@ $(document).ready(function() {
     
     setTimeout(() => {
         document.querySelector(".email-list.jquery").innerHTML = emailsJQuery; 
-    }, 1000) 
+    }, 2000) 
 })
 
 // BONUS: VANILLA
