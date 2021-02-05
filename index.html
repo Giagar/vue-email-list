@@ -11,6 +11,37 @@
 </head>
 <body>
     
+    <div id="root">
+        <header>
+            <h1>Practicing AJAX</h1>
+        </header>
+        <main>
+
+            <section>
+                <h2>The Vue way</h2>
+                <h3>Using Self</h3>
+                <ul class="email-list vue">
+                    <li v-for="email in emailsSelf">{{email}}</li>
+                </ul>
+                <h3>Using Self</h3>
+                <ul class="email-list vue">
+                    <li v-for="email in emailsArrow">{{email}}</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>The jQuery way - Bonus</h2>
+                <ul class="email-list jquery"></ul>
+            </section>
+
+            <section>
+                <h2>The Vanilla way - Bonus</h2>
+                <ul class="email-list vanilla"></ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
